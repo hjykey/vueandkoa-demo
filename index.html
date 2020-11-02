@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>vueandkoa-demo</title>
+    <style>
+      /* iphone5下1rem=16px HTML font-size=16px*/
+      .test {
+        /* width: 320px;       
+        height: 160px; */
+        width: 20rem;
+        height: 10rem;
+        background-color: bisque;
+        text-align: center;
+      }
+      .hello {
+        color: red;
+        font-size: 1rem;
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <div class="test">
+      <p class="hello">REM Test Page!</p>
+    </div>
+    <script>
+      //得到手机屏幕的宽度
+      let htmlWidth =
+        document.documentElement.clientWidth || document.body.clientWidth
+      console.log(htmlWidth)
+      //得到html的Dom元素
+      let htmlDom = document.getElementsByTagName('html')[0]
+      //设置根元素字体大小
+      htmlDom.style.fontSize = htmlWidth / 20 + 'px'
+    </script>
   </body>
 </html>

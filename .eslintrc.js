@@ -14,6 +14,8 @@ module.exports = {
     'plugin:vue/essential',
     // https://github.com/standard/standard/blob/master/docs/RULES-en.md
     'standard',
+    //解决ESlint和Prettier格式冲突
+    'Prettier',
   ],
   // required to lint *.vue files
   plugins: ['vue'],

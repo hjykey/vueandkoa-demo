@@ -11,5 +11,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  // template: '<App/>' //完整写法如下
+  template: '<App> </App>',
 })
