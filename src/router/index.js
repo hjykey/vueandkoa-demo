@@ -5,7 +5,7 @@ import ShoppingMall from '@/components/ShoppingMall'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       // path: '/',
@@ -20,3 +20,13 @@ export default new Router({
     },
   ],
 })
+// 挂载路由守卫
+// to 将要访问的路径
+// from 从哪个路径跳转而来
+// next 一个函数，表示放行
+router.beforeEach((to, from, next) => {
+  if (to.path === '/') return next('/ShoppingMall')
+  else return next()
+})
+
+export default router
