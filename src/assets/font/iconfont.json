@@ -1,0 +1,23 @@
+{
+  "id": "2180587",
+  "name": "first",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3050508",
+      "name": "定位",
+      "font_class": "location",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "1509768",
+      "name": "搜索",
+      "font_class": "search",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    }
+  ]
+}
