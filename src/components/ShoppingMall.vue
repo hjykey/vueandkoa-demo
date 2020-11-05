@@ -72,11 +72,29 @@
       :floorData="floor3"
       :floorTitle="floorName.floor3"
     ></floorComponent>
+    <!--Hot Area-->
+    <div class="hot-area">
+      <div class="hot-title">热卖商品</div>
+      <div class="hot-goods">
+        <van-list>
+          <van-row gutter="20">
+            <van-col span="12" v-for="(item, index) in hotGoods" :key="index">
+              <goods-info
+                :goodsImage="item.image"
+                :goodsName="item.name"
+                :goodsPrice="item.price"
+              ></goods-info>
+            </van-col>
+          </van-row>
+        </van-list>
+      </div>
+    </div>
   </div>
 </template>
 <script>
 import axios from 'axios'
 import floorComponent from './floorComponent'
+import goodsInfo from './goodsInfoComponent'
 export default {
   data() {
     return {
@@ -98,6 +116,8 @@ export default {
       floor2: [],
       floor3: [],
       floorName: {},
+      // 热卖商品
+      hotGoods: [],
     }
   },
   created() {
@@ -116,11 +136,12 @@ export default {
           this.floor2 = response.data.data.floor2
           this.floor3 = response.data.data.floor3
           this.floorName = response.data.data.floorName
+          this.hotGoods = response.data.data.hotGoods
         }
       })
       .catch(() => {})
   },
-  components: { floorComponent },
+  components: { floorComponent, goodsInfo },
   directives: {},
 }
 </script>
@@ -194,5 +215,13 @@ export default {
   flex-direction: row;
   background-color: #fff;
   border-bottom: 2px solid #ddd;
+}
+
+.hot-area {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  height: 1.8rem;
+  line-height: 1.8rem;
 }
 </style>

@@ -88,7 +88,8 @@ export default {
 
 .floor-title {
   text-align: center;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: bolder;
   height: 1.8rem;
   line-height: 1.8rem;
 }
