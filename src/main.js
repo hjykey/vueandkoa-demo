@@ -3,7 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+// 全局引用，组件局部引用请去组件中查看
+// import VueAwesomeSwiper from 'vue-awesome-swiper'
+// // require styles
+// import 'swiper/dist/css/swiper.css'
+// Vue.use(VueAwesomeSwiper /* { default global options } */)
 import { Button, Row, Col, Swipe, SwipeItem, Lazyload, Icon } from 'vant'
 Vue.use(Button)
   .use(Row)
@@ -15,6 +19,7 @@ Vue.use(Button)
 // Vue.use(Lazyload, {
 //   lazyComponent: true,
 // });
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -13,6 +13,8 @@
     ["import",{"libraryName":"vant","style":true}]
   ]
 7.避免ESLint和Prettier冲突，在.eslintrc.js文件的extends里加入 'Prettier'
+8.npm install -s swiper
+9.npm install vue-awesome-swiper --save
 
 ```
 

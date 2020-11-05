@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import ShoppingMall from '@/components/ShoppingMall'
-
+import swiperDefault from '@/components/swiperDefault'
 Vue.use(Router)
 
 const router = new Router({
@@ -17,6 +17,10 @@ const router = new Router({
     {
       path: '/ShoppingMall',
       component: ShoppingMall,
+    },
+    {
+      path: '/swiper',
+      component: swiperDefault,
     },
   ],
 })
