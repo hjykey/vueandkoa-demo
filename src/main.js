@@ -9,7 +9,18 @@ import router from './router'
 // // require styles
 // import 'swiper/dist/css/swiper.css'
 // Vue.use(VueAwesomeSwiper /* { default global options } */)
-import { Button, Row, Col, Swipe, SwipeItem, Lazyload, Icon, List } from 'vant'
+import {
+  Button,
+  Row,
+  Col,
+  Swipe,
+  SwipeItem,
+  Lazyload,
+  Icon,
+  List,
+  Field,
+  NavBar,
+} from 'vant'
 Vue.use(Button)
   .use(Row)
   .use(Col)
@@ -18,6 +29,8 @@ Vue.use(Button)
   .use(Lazyload)
   .use(Icon)
   .use(List)
+  .use(Field)
+  .use(NavBar)
 // Vue.use(Lazyload, {
 //   lazyComponent: true,
 // });

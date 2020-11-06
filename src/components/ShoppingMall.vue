@@ -122,7 +122,7 @@ export default {
   },
   created() {
     axios({
-      url: 'http://localhost:3000/koa',
+      url: 'http://localhost:3000/user',
       method: 'get',
     })
       .then((response) => {

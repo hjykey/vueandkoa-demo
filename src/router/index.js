@@ -3,6 +3,7 @@ import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import ShoppingMall from '@/components/ShoppingMall'
 import swiperDefault from '@/components/swiperDefault'
+import Register from '@/components/Register.vue'
 Vue.use(Router)
 
 const router = new Router({
@@ -22,6 +23,7 @@ const router = new Router({
       path: '/swiper',
       component: swiperDefault,
     },
+    { path: '/register', name: 'Register', component: Register },
   ],
 })
 // 挂载路由守卫
