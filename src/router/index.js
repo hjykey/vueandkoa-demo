@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import ShoppingMall from '@/components/ShoppingMall'
 import swiperDefault from '@/components/swiperDefault'
 import Register from '@/components/Register.vue'
+import Login from '@/components/Login.vue'
 Vue.use(Router)
 
 const router = new Router({
@@ -24,6 +25,7 @@ const router = new Router({
       component: swiperDefault,
     },
     { path: '/register', name: 'Register', component: Register },
+    { path: '/login', name: 'Login', component: Login },
   ],
 })
 // 挂载路由守卫

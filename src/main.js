@@ -9,6 +9,7 @@ import router from './router'
 // // require styles
 // import 'swiper/dist/css/swiper.css'
 // Vue.use(VueAwesomeSwiper /* { default global options } */)
+// 类似vant的UI组件还有elementUI,vuetify
 import {
   Button,
   Row,
@@ -31,6 +32,7 @@ Vue.use(Button)
   .use(List)
   .use(Field)
   .use(NavBar)
+
 // Vue.use(Lazyload, {
 //   lazyComponent: true,
 // });
