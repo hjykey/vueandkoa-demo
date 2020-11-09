@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
-import ShoppingMall from '@/components/ShoppingMall'
+import ShoppingMall from '@/components/ShoppingMall' // @在webpack.base.conf.js下定义，src目录的别名， extensions定义了当无后缀时自动查找的后缀名
 import swiperDefault from '@/components/swiperDefault'
 import Register from '@/components/Register.vue'
 import Login from '@/components/Login.vue'
+import Goods from '@/components/Goods'
+
 Vue.use(Router)
 
 const router = new Router({
@@ -26,6 +28,7 @@ const router = new Router({
     },
     { path: '/register', name: 'Register', component: Register },
     { path: '/login', name: 'Login', component: Login },
+    { path: '/Goods', name: 'Goods', component: Goods },
   ],
 })
 // 挂载路由守卫

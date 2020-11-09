@@ -27,7 +27,7 @@
           /> -->
         </van-col>
         <van-col span="16"> <input type="text" class="search-input"/></van-col>
-        <van-col span="5"><van-button size="mini">查找</van-button></van-col>
+        <van-col span="5"><van-button size="normal">查找</van-button></van-col>
       </van-row>
     </div>
     <!-- 轮播图 -->
