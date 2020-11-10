@@ -6,6 +6,7 @@ import swiperDefault from '@/components/swiperDefault'
 import Register from '@/components/Register.vue'
 import Login from '@/components/Login.vue'
 import Goods from '@/components/Goods'
+import CategoryList from '@/components/CategoryList'
 
 Vue.use(Router)
 
@@ -29,6 +30,7 @@ const router = new Router({
     { path: '/register', name: 'Register', component: Register },
     { path: '/login', name: 'Login', component: Login },
     { path: '/Goods', name: 'Goods', component: Goods },
+    { path: '/CategoryList', name: 'CategoryList', component: CategoryList },
   ],
 })
 // 挂载路由守卫
